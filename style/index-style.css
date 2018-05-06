@@ -84,7 +84,27 @@ a:hover,
   justify-content: center;
 }
 
+/* ---- Sticky Footer ---- */
 
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -100px;
+}
+
+.wrapper:after {
+	content: "";
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.main-footer,
+.wrapper:after {
+	height: 100px;
+}
 
 
 
